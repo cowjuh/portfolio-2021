@@ -1,34 +1,42 @@
-import Head from 'next/head'
-import Navbar from '../components/NavBar'
-import Hero from '../components/Hero'
-import FeaturedProject from '../components/FeaturedProject';
-import {featuredProjects} from '../content/featureProjects';
+import Head from "next/head";
+import Navbar from "../components/NavBar";
+import Hero from "../components/Hero";
+import FeaturedProject from "../components/FeaturedProject";
+import { featuredProjects } from "../content/featureProjects";
+import GlobalStyles from "../components/GlobalStyles";
+import EverythingElse from "../components/EverythingElse";
+import styled from "styled-components";
+
+const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+`;
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className='container'>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Jenny Zhang</title>
+        <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <main>
         <Navbar></Navbar>
-        <Hero/>
+        <Hero />
         {featuredProjects.map((project) => {
-          return(
-            <FeaturedProject
-              imgUrl={project.imgUrl}
-              title={project.title}
-              context={project.context}
-              description={project.description}
-            />               
-          )
+          return <FeaturedProject project={project} />;
         })}
+        <h2>A little bit of everything</h2>
+        <p>Anything catch your eye?</p>
+        <EverythingElse />
       </main>
 
       <footer>
-        <p>2021 • Built by Jenny Zhang using NextJS</p>
+        <a href='https://github.com/cowjuh/portfolio-2021'>
+          2021 • Built by Jenny Zhang using NextJS
+        </a>
       </footer>
 
       <style jsx>{`
@@ -108,8 +116,8 @@ export default function Home() {
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+          font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+            Bitstream Vera Sans Mono, Courier New, monospace;
         }
 
         .grid {
@@ -164,20 +172,7 @@ export default function Home() {
         }
       `}</style>
 
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
+      <GlobalStyles />
     </div>
-  )
+  );
 }
