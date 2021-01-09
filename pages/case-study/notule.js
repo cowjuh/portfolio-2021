@@ -28,7 +28,7 @@ const Notule = () => {
             <p>
               Thanks to PWAs and the ability to add any webpage to your phone's home screen, I was
               able to easily build a platform independent interface. All it took was some media
-              queries and a hamburger menu, of course to have a responsive web and mobile app
+              queries and a hamburger menu, of course, to have a responsive web and mobile app
               deployed!
             </p>
             <ImageContainer src='/notule-1.png' />

@@ -28,7 +28,7 @@ export default function Home() {
         {featuredProjects.map((project) => {
           return <FeaturedProject project={project} />;
         })}
-        <h2>A little bit of everything</h2>
+        <h2>What I've been up to</h2>
         <p>Anything catch your eye?</p>
         <EverythingElse />
       </main>

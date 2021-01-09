@@ -4,6 +4,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import ClickableIcon from "./atoms/ClickableIcon";
 config.autoAddCss = false;
 
 const NavOuter = styled.div`
@@ -67,13 +68,13 @@ const Navbar = () => {
             Resume
           </NavLink>
           <NavLink margin>
-            <FontAwesomeIcon icon={faEnvelope} />
+            <ClickableIcon color='#3f51b5' icon={faEnvelope} />
           </NavLink>
           <NavLink margin>
-            <FontAwesomeIcon icon={faGithub} />
+            <ClickableIcon color='#3f51b5' icon={faGithub} />
           </NavLink>
           <NavLink>
-            <FontAwesomeIcon icon={faLinkedinIn} />
+            <FontAwesomeIcon color='#3f51b5' icon={faLinkedinIn} />
           </NavLink>
         </NavSection>
       </NavInner>

@@ -11,7 +11,7 @@ const Card = styled.div`
   background-color: #f9f9f9;
   cursor: pointer;
   padding: 30px;
-  height: 150px;
+  min-height: 150px;
   transition: all 250ms;
   :hover {
     transform: scale(1.03);
@@ -20,15 +20,22 @@ const Card = styled.div`
   }
 `;
 
+const P = styled.p`
+  margin: 0;
+`;
+
 const EverythingElse = () => {
   return (
     <Container>
-      <Card>Art & Illustration</Card>
-      <Card>Digital & Film Photography</Card>
-      <Card>Video & Motion Graphics</Card>
-      <Card>Software & Engineering</Card>
-      <Card>Project Management</Card>
-      <Card>Card</Card>
+      <Card>🙋🏻‍♀️ I led a software engineering design team as its Co-President.</Card>
+      <Card>📸 I was published in two magazines.</Card>
+      <Card>🎬 I briefly started a YouTube channel.</Card>
+      <Card>👩🏻‍💻 I built a VR art gallery for a photography publication.</Card>
+      <Card>😎 I made some 3D illustrations in Adobe Dimension.</Card>
+      <Card>🎨 I raised just under $1000 for an important cause through art.</Card>
+      <Card>✨ I made some motion graphics animations!</Card>
+      <Card>✏️ I designed a couple logos.</Card>
+      <Card>🤓 I built my first full stack web application.</Card>
     </Container>
   );
 };
