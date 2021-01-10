@@ -7,7 +7,9 @@ const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  justify-content: center;
+  margin: 80px 0;
+  max-height: 60vh;
 `;
 
 const HeaderContainer = styled.div`

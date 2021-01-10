@@ -41,9 +41,7 @@ export default function Home() {
         <Section>
           <EverythingElse />
         </Section>
-        <Section>
-          <Contact />
-        </Section>
+        <Contact />
       </main>
 
       <style jsx>{`

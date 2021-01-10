@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
@@ -33,7 +34,7 @@ const NavInner = styled.div`
   justify-content: space-between;
   z-index: 2;
   @media (max-width: 1000px) {
-    width: 80%;
+    width: 90%;
   }
 `;
 
@@ -49,7 +50,7 @@ const NavLink = styled.a`
   text-decoration: none;
   margin: 0;
   transition: all 250ms;
-  margin-right: ${(props) => (props.margin ? "20px" : "0px")};
+  margin-left: ${(props) => (props.margin ? "20px" : "0px")};
   :hover {
     color: #3f51b5;
     transform: scale(1.05);
@@ -57,29 +58,39 @@ const NavLink = styled.a`
 `;
 
 const Navbar = () => {
+  const [width, setWidth] = useState();
+  const [sidebar, setSidebar] = useState(false);
+  const breakpoint = 768;
+  useEffect(() => {
+    setWidth(window.innerWidth);
+    window.addEventListener("resize", (e) => setWidth(e.target.innerWidth));
+  }, []);
+
   return (
     <>
       <NavOuter>
         <NavInner>
           <NavSection id="left">
-            <NavLink href="/">Jenny Zhang</NavLink>
+            <NavLink href="/">Home</NavLink>
           </NavSection>
           <NavSection id="right">
-            <NavLink margin href="/about">
-              About
-            </NavLink>
+            <NavLink href="/about">About</NavLink>
             <NavLink margin href="/about">
               Resume
             </NavLink>
-            <NavLink margin>
-              <ClickableIcon color="#3f51b5" icon={faEnvelope} />
-            </NavLink>
-            <NavLink margin>
-              <ClickableIcon color="#3f51b5" icon={faGithub} />
-            </NavLink>
-            <NavLink>
-              <ClickableIcon color="#3f51b5" icon={faLinkedinIn} />
-            </NavLink>
+            {width > breakpoint ? (
+              <>
+                <NavLink margin>
+                  <ClickableIcon color="#3f51b5" icon={faEnvelope} />
+                </NavLink>
+                <NavLink margin>
+                  <ClickableIcon color="#3f51b5" icon={faGithub} />
+                </NavLink>
+                <NavLink margin>
+                  <ClickableIcon color="#3f51b5" icon={faLinkedinIn} />
+                </NavLink>
+              </>
+            ) : null}
           </NavSection>
         </NavInner>
       </NavOuter>

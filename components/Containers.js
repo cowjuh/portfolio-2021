@@ -19,6 +19,7 @@ const ImgContainer = styled.img`
 const SecContainer = styled.div`
   width: 100%;
   max-width: 800px;
+  margin-bottom: 50px;
 `;
 
 export const BodyContainer = (props) => {
