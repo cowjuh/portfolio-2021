@@ -2,7 +2,7 @@ import CaseStudy from "../../components/CaseStudy";
 import NavBar from "../../components/NavBar";
 import { igenSummary } from "../../content/featureProjects";
 import TextContainer from "../../components/TextContainer";
-import { BodyContainer } from "../../components/Containers";
+import { BodyContainer, ImageContainer } from "../../components/Containers";
 import MainContainer from "../../components/MainContainer";
 
 const IgenProject = () => {
@@ -25,10 +25,9 @@ const IgenProject = () => {
             visual impairments, the assistive devices available commercially
             were limited. In fact, most people use white canes or guide dogs for
             navigation.
-            <br />
-            <br />
-            It got us thinking:
           </p>
+          <ImageContainer src="/assistive/context.png" />
+          <p>It got us thinking:</p>
           <h3>
             How might we incorporate technology into a device that combines the
             best elements of white canes and guide dogs?
@@ -56,6 +55,7 @@ const IgenProject = () => {
             of designer-user interactions, students see this step as a task in a
             checklist rather than a crucial part of engineering a great product.
           </p>
+          <ImageContainer src="/assistive/design-process.png" />
         </TextContainer>
         <TextContainer>
           <p>
@@ -66,6 +66,7 @@ const IgenProject = () => {
             sense of direction; any design was as good as another without the
             research to orient ourselves.
           </p>
+          <ImageContainer src="/assistive/designs.png" />
           <p>
             This is when I proposed that we should conduct user interviews. I
             overcame my team’s initial hesitation by setting up and leading a
@@ -120,6 +121,7 @@ const IgenProject = () => {
             finally able to make educated design decisions while simultaneously
             cutting out inaccurate assumptions.
           </p>
+          <ImageContainer src="/assistive/mvp-change.png" />
           <p>
             You can see that the revised MVP is not only more feasible in the 4
             month time frame, but provides value by fixing a specific problem
@@ -133,6 +135,7 @@ const IgenProject = () => {
         <TextContainer>
           <h2>How Can We Detect the User's Surrounding?</h2>
           <h3>Walking Straight: Sidewalk detection with OpenCV</h3>
+          <ImageContainer src="/assistive/vanishing-point.png" />
           <p>
             We decided to help users detect their alignment with sidewalks as
             opposed to other types of walkways for their proximity to open
@@ -154,11 +157,16 @@ const IgenProject = () => {
         </TextContainer>
         <TextContainer>
           <h2>Final Design</h2>
+          <ImageContainer src="/thumbnail-small-igen.png" />
+          <video autoPlay loop muted playsInline width="100%">
+            <source src="/assistive/demo-video.mp4" type="video/mp4" />
+          </video>
+          <ImageContainer src="/assistive/final-design.png" />
           <p>
-            I have purposefully redacted the engineering details involved in
-            making this project come together, but if you're interested in
-            hearing about our implementation process, we were required to create
-            a 10 minute video highlighting it that I've included below!
+            An adjustable locking mechanism gives flexibility to the user for
+            their preferred device placement and orientation. Users can also
+            choose to remove the device from a strap entirely and hold the
+            device with their hands, which was one of our user's suggestions.
           </p>
         </TextContainer>
         <TextContainer>
