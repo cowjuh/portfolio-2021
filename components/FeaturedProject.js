@@ -4,9 +4,11 @@ import Link from "next/link";
 
 const Container = styled.div`
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: start;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  pointer-events: ${(props) => (props.disabled ? "none" : "auto")};
 `;
 
 const FeaturedImage = styled.img`
@@ -15,38 +17,55 @@ const FeaturedImage = styled.img`
   height: auto;
   border-radius: 2px;
   transition: all 250ms;
+  filter: ${(props) =>
+    props.disabled ? "grayscale(100%) brightness(105%)" : "none"};
   :hover {
-    transform: scale(1.01);
+    transform: scale(1.03);
   }
 `;
 
 const Subtitle = styled.p`
   margin: 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-top: 20px;
   color: gray;
 `;
 
-const ProjectTitle = styled.h2`
+const ProjectTitle = styled.p`
   cursor: pointer;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 1.2rem;
   margin-bottom: 0px;
   :hover {
-    color: blue;
+    color: #3f51b5;
   }
+`;
+
+const Badge = styled.div`
+  position: absolute;
+  color: white;
+  font-weight: 500;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  background-color: rgb(255, 255, 255, 0.4);
+  border-radius: 5px;
 `;
 
 const FeaturedProject = (props) => {
   const project = props.project;
+  const link = project.comingSoon ? "" : `/case-study/${project.url}`;
   return (
-    <Container>
-      <Link href={`/case-study/${project.url}`}>
-        <FeaturedImage src={project.imgUrl} />
-      </Link>
-      <Link href={`/case-study/${project.url}`}>
-        <ProjectTitle>{project.title}</ProjectTitle>
+    <Container disabled={project.comingSoon}>
+      <Link href={link}>
+        <FeaturedImage disabled={project.comingSoon} src={project.imgUrl} />
       </Link>
       <Subtitle>{project.context}</Subtitle>
-      <p>{project.description}</p>
+      <Link href={link}>
+        <ProjectTitle>{project.title}</ProjectTitle>
+      </Link>
+      {project.comingSoon && <Badge>Current Job</Badge>}
     </Container>
   );
 };

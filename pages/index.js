@@ -6,6 +6,7 @@ import { featuredProjects } from "../content/featureProjects";
 import GlobalStyles from "../components/GlobalStyles";
 import EverythingElse from "../components/EverythingElse";
 import styled from "styled-components";
+import Contact from "../components/Contact";
 
 const GridContainer = styled.div`
   display: grid;
@@ -14,30 +15,36 @@ const GridContainer = styled.div`
   width: 100%;
 `;
 
+const Section = styled.div`
+  margin-bottom: 50px;
+  width: 100%;
+`;
+
 export default function Home() {
   return (
-    <div className='container'>
+    <div className="container">
       <Head>
         <title>Jenny Zhang</title>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <Navbar></Navbar>
         <Hero />
-        {featuredProjects.map((project) => {
-          return <FeaturedProject project={project} />;
-        })}
-        <h2>What I've been up to</h2>
-        <p>Anything catch your eye?</p>
-        <EverythingElse />
+        <Section>
+          <GridContainer>
+            {featuredProjects.map((project) => {
+              return <FeaturedProject project={project} />;
+            })}
+          </GridContainer>
+        </Section>
+        <Section>
+          <EverythingElse />
+        </Section>
+        <Section>
+          <Contact />
+        </Section>
       </main>
-
-      <footer>
-        <a href='https://github.com/cowjuh/portfolio-2021'>
-          2021 • Built by Jenny Zhang using NextJS
-        </a>
-      </footer>
 
       <style jsx>{`
         .container {
@@ -45,36 +52,6 @@ export default function Home() {
           padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          max-width: 800px;
-          width: 90%;
-        }
-
-        footer {
-          width: 100%;
-          height: 60px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
           justify-content: center;
           align-items: center;
         }
@@ -116,8 +93,8 @@ export default function Home() {
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-            Bitstream Vera Sans Mono, Courier New, monospace;
+          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
 
         .grid {
@@ -164,7 +141,7 @@ export default function Home() {
           height: 1em;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 1000px) {
           .grid {
             width: 100%;
             flex-direction: column;

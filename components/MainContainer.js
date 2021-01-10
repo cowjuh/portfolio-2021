@@ -6,6 +6,9 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   max-width: 800px;
+  @media (max-width: 1000px) {
+    width: 80%;
+  }
 `;
 
 const MainContainer = (props) => {

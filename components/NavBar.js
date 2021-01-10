@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -33,6 +32,9 @@ const NavInner = styled.div`
   align-items: center;
   justify-content: space-between;
   z-index: 2;
+  @media (max-width: 1000px) {
+    width: 80%;
+  }
 `;
 
 const NavSection = styled.div`
@@ -43,42 +45,46 @@ const NavSection = styled.div`
 const NavLink = styled.a`
   cursor: pointer;
   color: black;
+  font-weight: 500;
   text-decoration: none;
   margin: 0;
   transition: all 250ms;
   margin-right: ${(props) => (props.margin ? "20px" : "0px")};
   :hover {
-    color: blue;
+    color: #3f51b5;
     transform: scale(1.05);
   }
 `;
 
 const Navbar = () => {
   return (
-    <NavOuter>
-      <NavInner>
-        <NavSection id='left'>
-          <NavLink href='/'>Jenny Zhang</NavLink>
-        </NavSection>
-        <NavSection id='right'>
-          <NavLink margin href='/about'>
-            About
-          </NavLink>
-          <NavLink margin href='/about'>
-            Resume
-          </NavLink>
-          <NavLink margin>
-            <ClickableIcon color='#3f51b5' icon={faEnvelope} />
-          </NavLink>
-          <NavLink margin>
-            <ClickableIcon color='#3f51b5' icon={faGithub} />
-          </NavLink>
-          <NavLink>
-            <FontAwesomeIcon color='#3f51b5' icon={faLinkedinIn} />
-          </NavLink>
-        </NavSection>
-      </NavInner>
-    </NavOuter>
+    <>
+      <NavOuter>
+        <NavInner>
+          <NavSection id="left">
+            <NavLink href="/">Jenny Zhang</NavLink>
+          </NavSection>
+          <NavSection id="right">
+            <NavLink margin href="/about">
+              About
+            </NavLink>
+            <NavLink margin href="/about">
+              Resume
+            </NavLink>
+            <NavLink margin>
+              <ClickableIcon color="#3f51b5" icon={faEnvelope} />
+            </NavLink>
+            <NavLink margin>
+              <ClickableIcon color="#3f51b5" icon={faGithub} />
+            </NavLink>
+            <NavLink>
+              <ClickableIcon color="#3f51b5" icon={faLinkedinIn} />
+            </NavLink>
+          </NavSection>
+        </NavInner>
+      </NavOuter>
+      <div style={{ height: "60px" }}></div>
+    </>
   );
 };
 

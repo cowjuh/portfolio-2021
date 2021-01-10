@@ -1,50 +1,61 @@
 export const featuredProjects = [
   {
     url: "notule",
-    title: "Notule.",
-    context: "Product Designer + Full Stack Developer | December 2020 - Present",
+    title: "Notule - Your stream of consciousness",
+    context: "Product Designer + Full Stack Developer",
     description:
       "Your stream of consciousness. A full stack (MongoDB, Express, NodeJS, ReactJS) progressive web app.",
-    imgUrl: "/thumbnail-notule.png",
+    imgUrl: "/thumbnail-small-notule.png",
   },
   {
-    url: "copysmith",
-    title: "Copysmith",
-    context: "Product Design + Software Engineering Intern | December 2020 - Present",
-    description:
-      "I'm designing the brand identity and implementing a library of UI components in ReactJS.",
-    imgUrl:
-      "https://uploads-ssl.webflow.com/5f67cb3472176335bd297c43/5f6831e7a7c41561de17950b_NGcY5xMdNwd44LPUW4c5F1DPPLwgZ6xLu6PD-ok6ncS34hnRYviZbUrQgKs_V-SZMEh42OKiUzf5nZJxHKm0V_UiYLOxclhUA4RHiEjY_Ab9YsHDh4nT0L5nVwWcqZ0u_sl7kVeE.png",
-  },
-  {
-    title: "FISPAN",
-    context: "UX/UI Design Intern | May 2020 - Aug 2020 | May 2019 - Aug 2019",
+    url: "fispan",
+    title: "Designing Complex Fintech Products at FISPAN",
+    context: "UX/UI Design Intern",
     description:
       "I led the design for FISPAN’s SaaS product under restrictive confidentiality and compliance constraints. I designed and built a design system and co-led the company’s rebranding efforts.",
-    imgUrl:
-      "https://uploads-ssl.webflow.com/5f67cb3472176335bd297c43/5f6831e7a7c41561de17950b_NGcY5xMdNwd44LPUW4c5F1DPPLwgZ6xLu6PD-ok6ncS34hnRYviZbUrQgKs_V-SZMEh42OKiUzf5nZJxHKm0V_UiYLOxclhUA4RHiEjY_Ab9YsHDh4nT0L5nVwWcqZ0u_sl7kVeE.png",
+    imgUrl: "thumbnail-small-fispan.png",
   },
   {
-    title: "The Assistive Device for the Visually Impaired",
-    context: "UX Research, Software + Hardware Engineer | Jan 2020 - Apr 2020",
-    description:
-      "Researching and designing an assistive device that detects a user's deviation from a sidewalk and any incoming obstacles.",
-    imgUrl:
-      "https://uploads-ssl.webflow.com/5f67cb3472176335bd297c43/5f6831e7a7c41561de17950b_NGcY5xMdNwd44LPUW4c5F1DPPLwgZ6xLu6PD-ok6ncS34hnRYviZbUrQgKs_V-SZMEh42OKiUzf5nZJxHKm0V_UiYLOxclhUA4RHiEjY_Ab9YsHDh4nT0L5nVwWcqZ0u_sl7kVeE.png",
-  },
-  {
-    title: "Rebranding UBC Launch Pad",
-    context: "UX/UI Design, Rebranding | Sep 2018 - Apr 2020",
+    url: "rebranding-lp",
+    title: "Designing UBC Launch Pad's Brand Identity",
+    context: "UX/UI Design + Illustration",
     description:
       "Redesigning the brand identity, website, and illustrations for UBC's Software Engineering Design team.",
-    imgUrl: "/thumbnail-launchpad.png",
+    imgUrl: "thumbnail-small-launchpad.png",
+  },
+  {
+    url: "igen-project",
+    title: "The Assistive Device for the Visually Impaired",
+    context: "UX Research + Software + Hardware Engineer",
+    description:
+      "Researching and designing an assistive device that detects a user's deviation from a sidewalk and any incoming obstacles.",
+    imgUrl: "thumbnail-small-igen.png",
+  },
+  {
+    url: "restructuring-lp",
+    title: "Restructuring a Software Engineering Design Team",
+    context: "Co-President + Project Manager",
+    description:
+      "Researching and designing an assistive device that detects a user's deviation from a sidewalk and any incoming obstacles.",
+    imgUrl: "thumbnail-small-structuring.png",
+  },
+  {
+    comingSoon: true,
+    url: "copysmith",
+    title: "Designing Copysmith's Brand Identity",
+    context: "Product Design + Software Intern",
+    description:
+      "I'm designing the brand identity and implementing a library of UI components in ReactJS.",
+    imgUrl: "/thumbnail-small-copysmith.png",
   },
 ];
 
 export const notuleSummary = {
   imgUrl: "/case-img-notule.png",
   problemTitle: ["I want a new way to record and archive my thoughts."],
-  problemParagraph: ["Existing apps and platforms are clunky, slow, or too opinionated."],
+  problemParagraph: [
+    "Existing apps and platforms are clunky, slow, or too opinionated.",
+  ],
   solution: [
     "I built Notule, a note-taking app which aims to make it easier to transcribe all of your thoughts as they happen. All wrapped in colourful yet subtle UI.",
   ],
@@ -55,7 +66,10 @@ export const notuleSummary = {
     "I designed and implemented my ideal user interface",
     "... and more! It's a work in progress.",
   ],
-  context: ["Timeline: Dec 2020 - Present", "Tech: MongoDB, Express, NodeJS, ReactJS"],
+  context: [
+    "Timeline: Dec 2020 - Present",
+    "Tech: MongoDB, Express, NodeJS, ReactJS",
+  ],
 };
 
 export const igenSummary = {

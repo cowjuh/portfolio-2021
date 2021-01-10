@@ -16,10 +16,19 @@ const ImgContainer = styled.img`
   background-image: cover;
 `;
 
+const SecContainer = styled.div`
+  width: 100%;
+  max-width: 800px;
+`;
+
 export const BodyContainer = (props) => {
   return <Container>{props.children}</Container>;
 };
 
 export const ImageContainer = (props) => {
   return <ImgContainer src={props.src} />;
+};
+
+export const SectionContainer = (props) => {
+  return <SecContainer>{props.children}</SecContainer>;
 };

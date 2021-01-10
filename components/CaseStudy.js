@@ -1,14 +1,14 @@
 import Head from "next/head";
 import styled from "styled-components";
 import CaseSummary from "./CaseSummary";
-import { BodyContainer } from "./Containers";
 import GlobalStyles from "./GlobalStyles";
 import FloatingArrow from "./atoms/FloatingArrow";
 import TextContainer from "./TextContainer";
-import EverythingElse from "./EverythingElse";
+import Contact from "./Contact";
+import MainContainer from "./MainContainer";
 
 const DividerContainer = styled.div`
-  margin: 50px 0;
+  margin: 80px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,13 +25,13 @@ const Divider = (props) => {
 
 const CaseStudy = (props) => {
   return (
-    <>
+    <MainContainer>
       <GlobalStyles />
       <CaseSummary content={props.summary} />
       <Divider text={props.dividerText} />
       {props.children}
-      <EverythingElse />
-    </>
+      <Contact />
+    </MainContainer>
   );
 };
 
