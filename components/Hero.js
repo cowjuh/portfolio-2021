@@ -44,12 +44,11 @@ const Hero = () => {
     <HeroContainer>
       <HeaderContainer>
         <HeaderTitle>
-          Hi 👩🏻‍ I’m Jenny, a <Span>designer</Span>, <Span>developer</Span>, and
-          Integrated Engineering student at UBC. I’ve designed fintech products
-          at <Span>FISPAN</Span> and am helping build <Span>Copysmith's</Span>{" "}
-          AI Copywriter.
+          Hi 👩🏻‍💻‍ I’m Jenny, a <Span>designer</Span>, <Span>developer</Span>, and Integrated
+          Engineering student at UBC. I’ve designed fintech products at <Span>FISPAN</Span> and am
+          helping build <Span>Copysmith's</Span> AI Copywriter.
         </HeaderTitle>
-        <PrimaryButton href="/about">More about me</PrimaryButton>
+        <PrimaryButton href='/about'>More about me</PrimaryButton>
       </HeaderContainer>
       <p style={{ fontWeight: "600" }}>MY WORK</p>
       <FloatingArrow />

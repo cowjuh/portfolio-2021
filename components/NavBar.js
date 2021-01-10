@@ -70,27 +70,30 @@ const Navbar = () => {
     <>
       <NavOuter>
         <NavInner>
-          <NavSection id="left">
-            <NavLink href="/">Home</NavLink>
+          <NavSection id='left'>
+            <NavLink href='/'>👩🏻‍💻 Jenny Zhang</NavLink>
           </NavSection>
-          <NavSection id="right">
-            <NavLink href="/about">About</NavLink>
-            <NavLink margin href="/about">
+          <NavSection id='right'>
+            <NavLink href='/about'>About</NavLink>
+            <NavLink
+              margin
+              target='_blank'
+              href='https://drive.google.com/file/d/1ZZd3H84nBZbRShXFg46T50prV9QfLWjt/view?usp=sharing'>
               Resume
             </NavLink>
-            {width > breakpoint ? (
+            {/* {width > breakpoint ? (
               <>
                 <NavLink margin>
-                  <ClickableIcon color="#3f51b5" icon={faEnvelope} />
+                  <ClickableIcon color='#3f51b5' icon={faEnvelope} />
                 </NavLink>
                 <NavLink margin>
-                  <ClickableIcon color="#3f51b5" icon={faGithub} />
+                  <ClickableIcon color='#3f51b5' icon={faGithub} />
                 </NavLink>
                 <NavLink margin>
-                  <ClickableIcon color="#3f51b5" icon={faLinkedinIn} />
+                  <ClickableIcon color='#3f51b5' icon={faLinkedinIn} />
                 </NavLink>
               </>
-            ) : null}
+            ) : null} */}
           </NavSection>
         </NavInner>
       </NavOuter>
