@@ -2,7 +2,6 @@ import CaseStudy from "../components/CaseStudy";
 import NavBar from "../components/NavBar";
 import { notuleSummary } from "../content/featureProjects";
 import { BodyContainer } from "../components/Containers";
-import styled from "styled-components";
 import TextContainer from "../components/TextContainer";
 import MainContainer from "../components/MainContainer";
 import GlobalStyles from "../components/GlobalStyles";
