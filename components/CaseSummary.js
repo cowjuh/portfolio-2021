@@ -61,6 +61,12 @@ const CaseSummary = (props) => {
           content.problemParagraph.map((element) => {
             return <p>{element}</p>;
           })}
+        {content.externalUrl && (
+          <>
+            <h4 className="section-title">LINK</h4>
+            <a href={content.externalUrl}>{content.externalUrl}</a>
+          </>
+        )}
         <h4 className="section-title">SOLUTION</h4>
         {content &&
           content.solution.map((element) => {

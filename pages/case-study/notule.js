@@ -1,17 +1,39 @@
 import React from "react";
 import CaseStudy from "../../components/CaseStudy";
 import NavBar from "../../components/NavBar";
-import { notuleSummary } from "../../content/featureProjects";
 import { BodyContainer, ImageContainer } from "../../components/Containers";
 import styled from "styled-components";
 import TextContainer from "../../components/TextContainer";
 import MainContainer from "../../components/MainContainer";
 
+const summary = {
+  imgUrl: "/case-img-notule.png",
+  problemTitle: ["I want a new way to record and archive my thoughts."],
+  problemParagraph: [
+    "Existing apps and platforms are clunky, slow, or too opinionated.",
+  ],
+  externalUrl: "http://hellohellohello.world/",
+  solution: [
+    "I built Notule, a note-taking app which aims to make it easier to transcribe all of your thoughts as they happen. All wrapped in colourful yet subtle UI.",
+  ],
+  outcome: [
+    "I learned to build a Full Stack application using MongoDB, Express, NodeJS, and ReactJS",
+    "The app is a Progressive Web App and is responsive on mobile",
+    "I implemented authentication via Google Oauth",
+    "I designed and implemented my ideal user interface",
+    "... and more! It's a work in progress.",
+  ],
+  context: [
+    "Timeline: Dec 2020 - Present",
+    "Tech: MongoDB, Express, NodeJS, ReactJS",
+  ],
+};
+
 const Notule = () => {
   return (
     <BodyContainer>
       <NavBar />
-      <CaseStudy dividerText="MORE" summary={notuleSummary}>
+      <CaseStudy dividerText="MORE" summary={summary}>
         <TextContainer>
           <h2>Subtly Colorful.</h2>
           <p>
