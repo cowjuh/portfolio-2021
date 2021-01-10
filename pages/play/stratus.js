@@ -5,7 +5,6 @@ import TextContainer from "../../components/TextContainer";
 import { BodyContainer } from "../../components/Containers";
 import MainContainer from "../../components/MainContainer";
 import GlobalStyles from "../../components/GlobalStyles";
-import Footer from "../../components/Footer";
 
 const Stratus = () => {
   return (
