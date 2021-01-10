@@ -17,6 +17,13 @@ const HeroImage = styled.img`
   }
 `;
 
+const HeroVideo = styled.video`
+  max-width: 100%;
+  @media (max-width: 1000px) {
+    height: 50vh;
+  }
+`;
+
 const ScrollableSection = styled.div`
   width: 50%;
   display: block;
@@ -32,11 +39,12 @@ const ScrollableSection = styled.div`
 
 const StickySection = styled.div`
   top: 60px;
-  position: sticky;
   flex: 1;
+  position: sticky;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   max-height: calc(100vh - 60px);
   @media (max-width: 1000px) {
     position: inherit;
@@ -52,36 +60,44 @@ const CaseSummary = (props) => {
   return (
     <Container>
       <StickySection>
-        <HeroImage src={content.imgUrl} />
+        {content.videoUrl ? (
+          <div style={{ width: "80%" }}>
+            <HeroVideo autoPlay loop muted playsInline>
+              <source src={content.videoUrl} type='video/mp4' />
+            </HeroVideo>
+          </div>
+        ) : (
+          <HeroImage src={content.imgUrl} />
+        )}
       </StickySection>
       <ScrollableSection>
-        <h4 className="section-title">PROBLEM</h4>
+        <h4 className='section-title'>PROBLEM</h4>
         <h2 style={{ fontWeight: "600" }}>{content.problemTitle}</h2>
         {content &&
           content.problemParagraph.map((element) => {
             return <p>{element}</p>;
           })}
-        {content.externalUrl && (
-          <>
-            <h4 className="section-title">LINK</h4>
-            <a href={content.externalUrl}>{content.externalUrl}</a>
-          </>
-        )}
-        <h4 className="section-title">SOLUTION</h4>
+        <h4 className='section-title'>SOLUTION</h4>
         {content &&
           content.solution.map((element) => {
             return <p>{element}</p>;
           })}
-        <h4 className="section-title">OUTCOME</h4>
+        <h4 className='section-title'>OUTCOME</h4>
         {content &&
           content.outcome.map((element) => {
             return <p>{element}</p>;
           })}
-        <h4 className="section-title">CONTEXT</h4>
+        <h4 className='section-title'>CONTEXT</h4>
         {content &&
           content.context.map((element) => {
             return <p>{element}</p>;
           })}
+        {content.externalUrl && (
+          <>
+            <h4 className='section-title'>WEBSITE</h4>
+            <a href={content.externalUrl}>{content.externalUrl}</a>
+          </>
+        )}
       </ScrollableSection>
     </Container>
   );
