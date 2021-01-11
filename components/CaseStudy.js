@@ -12,6 +12,7 @@ const DividerContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 2;
 `;
 
 const Divider = (props) => {

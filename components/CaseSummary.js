@@ -10,7 +10,7 @@ const Container = styled.div`
 `;
 
 const HeroImage = styled.img`
-  height: 100vh;
+  width: 100%;
   object-fit: contain;
   @media (max-width: 1000px) {
     height: 50vh;
@@ -19,8 +19,12 @@ const HeroImage = styled.img`
 
 const HeroVideo = styled.video`
   max-width: 100%;
+  object-fit: contain;
+  margin: auto auto;
   @media (max-width: 1000px) {
-    height: 50vh;
+    height: 60vh;
+    padding: 0;
+    margin: 0;
   }
 `;
 
@@ -38,7 +42,7 @@ const ScrollableSection = styled.div`
 `;
 
 const StickySection = styled.div`
-  top: 60px;
+  top: 0px;
   flex: 1;
   position: sticky;
   display: flex;
@@ -48,6 +52,8 @@ const StickySection = styled.div`
   max-height: calc(100vh - 60px);
   @media (max-width: 1000px) {
     position: inherit;
+    align-items: center;
+    height: auto;
   }
 `;
 
@@ -61,40 +67,38 @@ const CaseSummary = (props) => {
     <Container>
       <StickySection>
         {content.videoUrl ? (
-          <div style={{ width: "80%" }}>
-            <HeroVideo autoPlay loop muted playsInline>
-              <source src={content.videoUrl} type='video/mp4' />
-            </HeroVideo>
-          </div>
+          <HeroVideo autoPlay loop muted playsInline>
+            <source src={content.videoUrl} type="video/mp4" />
+          </HeroVideo>
         ) : (
           <HeroImage src={content.imgUrl} />
         )}
       </StickySection>
       <ScrollableSection>
-        <h4 className='section-title'>PROBLEM</h4>
+        <h4 className="section-title">PROBLEM</h4>
         <h2 style={{ fontWeight: "600" }}>{content.problemTitle}</h2>
         {content &&
           content.problemParagraph.map((element) => {
             return <p>{element}</p>;
           })}
-        <h4 className='section-title'>SOLUTION</h4>
+        <h4 className="section-title">SOLUTION</h4>
         {content &&
           content.solution.map((element) => {
             return <p>{element}</p>;
           })}
-        <h4 className='section-title'>OUTCOME</h4>
+        <h4 className="section-title">OUTCOME</h4>
         {content &&
           content.outcome.map((element) => {
             return <p>{element}</p>;
           })}
-        <h4 className='section-title'>CONTEXT</h4>
+        <h4 className="section-title">CONTEXT</h4>
         {content &&
           content.context.map((element) => {
             return <p>{element}</p>;
           })}
         {content.externalUrl && (
           <>
-            <h4 className='section-title'>WEBSITE</h4>
+            <h4 className="section-title">WEBSITE</h4>
             <a href={content.externalUrl}>{content.externalUrl}</a>
           </>
         )}

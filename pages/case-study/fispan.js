@@ -7,8 +7,7 @@ import TextContainer from "../../components/TextContainer";
 import MainContainer from "../../components/MainContainer";
 
 const summary = {
-  imgUrl:
-    "https://cms-assets.tutsplus.com/uploads/users/158/posts/34500/final_image/FitnessApp0.jpg",
+  imgUrl: "/thumbnail-small-fispan.png",
   problemTitle: [
     "How can I deliver and validate my UX designs when I don't have access to end users?",
   ],

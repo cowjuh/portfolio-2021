@@ -5,11 +5,34 @@ import TextContainer from "../../components/TextContainer";
 import { BodyContainer, ImageContainer } from "../../components/Containers";
 import MainContainer from "../../components/MainContainer";
 
+const summary = {
+  imgUrl: "/thumbnail-small-igen.png",
+  problemTitle: ["Walking a straight line without vision is challenging."],
+  problemParagraph: [
+    "People with visual impairments are faced with potentially catastrophic situations when walking near open roads, quiet electric cars, or unusual obstacles, where the slightest deviation in their angle can have huge effects.",
+  ],
+  solution: [
+    "An assistive device which uses computer vision to detect if its user is deviating from the sidewalk while alerting them of obstacles.",
+  ],
+  outcome: [
+    "I taught UX Research Design to engineers",
+    "We interviewed 11 people with visual impairments",
+    "The interview data helped us make educated design decisions, leading to a simpler product that solves a real problem.",
+    "The product shifted its focus towards helping its users walk straight while detecting obstacles.",
+    "Our project won the Faculty Award in IGEN for the UBC APSC Design and Innovation Day",
+  ],
+  context: [
+    "Timeline: Jan 2020 - Apr 2020",
+    "Team: Abdullah, Kaylee, Han, Mika, Niko",
+    "Tech: Python, Raspberry Pi, OpenCV, Ultrasonic Sensors, SolidWorks",
+  ],
+};
+
 const IgenProject = () => {
   return (
     <BodyContainer>
       <NavBar />
-      <CaseStudy dividerText="FULL CASE STUDY" summary={igenSummary}>
+      <CaseStudy dividerText="FULL CASE STUDY" summary={summary}>
         <TextContainer>
           <h1>Problem Statement</h1>
           <p>

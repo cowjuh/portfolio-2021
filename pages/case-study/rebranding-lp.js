@@ -7,8 +7,7 @@ import TextContainer from "../../components/TextContainer";
 import MainContainer from "../../components/MainContainer";
 
 export const summary = {
-  imgUrl:
-    "https://cms-assets.tutsplus.com/uploads/users/158/posts/34500/final_image/FitnessApp0.jpg",
+  videoUrl: "/lp-rebrand/hero-video.mp4",
   problemTitle: [
     "An outdated brand poorly represented its tech-forward community.",
   ],
