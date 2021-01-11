@@ -81,19 +81,6 @@ const Navbar = () => {
               href='https://drive.google.com/file/d/1ZZd3H84nBZbRShXFg46T50prV9QfLWjt/view?usp=sharing'>
               Resume
             </NavLink>
-            {/* {width > breakpoint ? (
-              <>
-                <NavLink margin>
-                  <ClickableIcon color='#3f51b5' icon={faEnvelope} />
-                </NavLink>
-                <NavLink margin>
-                  <ClickableIcon color='#3f51b5' icon={faGithub} />
-                </NavLink>
-                <NavLink margin>
-                  <ClickableIcon color='#3f51b5' icon={faLinkedinIn} />
-                </NavLink>
-              </>
-            ) : null} */}
           </NavSection>
         </NavInner>
       </NavOuter>
