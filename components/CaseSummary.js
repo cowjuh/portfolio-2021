@@ -18,7 +18,7 @@ const HeroImage = styled.img`
 `;
 
 const HeroVideo = styled.video`
-  max-width: 100%;
+  max-height: 100vh;
   object-fit: contain;
   margin: auto auto;
   @media (max-width: 1000px) {
