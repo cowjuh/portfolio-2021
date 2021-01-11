@@ -182,7 +182,7 @@ const IgenProject = () => {
           <h2>Final Design</h2>
           <ImageContainer src="/thumbnail-small-igen.png" />
           <video autoPlay loop muted playsInline width="100%">
-            <source src="/assistive/demo-video.mp4" type="video/mp4" />
+            <source src="/assistive/igen-video.mp4" type="video/mp4" />
           </video>
           <ImageContainer src="/assistive/final-design.png" />
           <p>

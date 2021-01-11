@@ -40,7 +40,7 @@ const Stratus = () => {
           </p>
           <video
             style={{ marginTop: "20px" }}
-            width="800px"
+            width="100%"
             autoPlay
             loop
             muted
@@ -53,7 +53,7 @@ const Stratus = () => {
           <h2>Take a tour of our gallery!</h2>
           <iframe
             src="https://hubs.mozilla.com/5EccJCN/stratus-virtual-experience-room-one/?embed_token=94db369a7d9fa9bce2036f2488ec1955"
-            style={{ width: "100%", height: "600px" }}
+            style={{ width: "100%", height: "60vh" }}
             allow="vr"
           ></iframe>
         </TextContainer>
