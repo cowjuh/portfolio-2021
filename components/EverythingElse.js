@@ -124,11 +124,11 @@ const EverythingElse = () => {
           displayText={"✨ I made some motion graphics animations!"}
           hoverText="Read case study"
         />
-        <Card
+        {/* <Card
           link="/play/logos"
           displayText={"✏️ I designed a couple logos."}
           hoverText="Read case study"
-        />
+        /> */}
       </Container>
     </MainContainer>
   );
