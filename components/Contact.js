@@ -24,9 +24,10 @@ const Contact = () => {
       <Line />
       <LinksContainer>
         <a>jenzhang530@gmail.com</a>
-        <a href='https://www.linkedin.com/in/cowjuh/'>LinkedIn</a>
-        <a href='https://twitter.com/cowjuh'>Twitter</a>
-        <a href='https://github.com/cowjuh/'>Github</a>
+        <a href="https://www.linkedin.com/in/cowjuh/">LinkedIn</a>
+        <a href="https://twitter.com/cowjuh">Twitter</a>
+        <a href="https://www.instagram.com/cowjuh/">Instagram</a>
+        <a href="https://github.com/cowjuh/">Github</a>
       </LinksContainer>
       <p>2021 • Built by Jenny Zhang using NextJS</p>
 
