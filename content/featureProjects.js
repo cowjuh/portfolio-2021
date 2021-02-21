@@ -6,7 +6,6 @@ export const featuredProjects = [
     description:
       "Your stream of consciousness. A full stack (MongoDB, Express, NodeJS, ReactJS) progressive web app.",
     imgUrl: "/thumbnail-small-notule.png",
-    videoUrl: "/notule-desktop.mp4",
   },
   {
     url: "fispan",
@@ -50,23 +49,6 @@ export const featuredProjects = [
     imgUrl: "/thumbnail-small-copysmith.png",
   },
 ];
-
-export const notuleSummary = {
-  imgUrl: "/case-img-notule.png",
-  problemTitle: ["I want a new way to record and archive my thoughts."],
-  problemParagraph: ["Existing apps and platforms are clunky, slow, or too opinionated."],
-  solution: [
-    "I built Notule, a note-taking app which aims to make it easier to transcribe all of your thoughts as they happen. All wrapped in colourful yet subtle UI.",
-  ],
-  outcome: [
-    "I learned to build a Full Stack application using MongoDB, Express, NodeJS, and ReactJS",
-    "The app is a Progressive Web App and is responsive on mobile",
-    "I implemented authentication via Google Oauth",
-    "I designed and implemented my ideal user interface",
-    "... and more! It's a work in progress.",
-  ],
-  context: ["Timeline: Dec 2020 - Present", "Tech: MongoDB, Express, NodeJS, ReactJS"],
-};
 
 export const igenSummary = {
   imgUrl:
