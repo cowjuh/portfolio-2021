@@ -4,7 +4,6 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
 
 const BannerContainer = styled.div`
-	border: 2px solid #3f51b5;
 	color: #3f51b5;
 	border-radius: 5px;
 	background: #3f51b51a;
@@ -12,6 +11,7 @@ const BannerContainer = styled.div`
 	width: 100%;
 	display: flex;
 	align-items: center;
+	font-weight: 300;
 `;
 
 const NotificationBanner = ({children}) => {
