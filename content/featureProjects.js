@@ -1,4 +1,13 @@
 export const featuredProjects = [
+		  {
+    comingSoon: true,
+    url: "amazon",
+    title: "Summer 2021 Amazon AWS Internship",
+    context: "Front-End Engineering Intern",
+    description:
+      "I'm designing the brand identity and implementing a library of UI components in ReactJS.",
+    imgUrl: "/thumbnail-aws.png",
+  },
   {
     url: "notule",
     title: "Notule - Your stream of consciousness",
@@ -38,16 +47,16 @@ export const featuredProjects = [
     description:
       "Researching and designing an assistive device that detects a user's deviation from a sidewalk and any incoming obstacles.",
     imgUrl: "thumbnail-small-structuring.png",
-  },
-  {
-    comingSoon: true,
-    url: "copysmith",
-    title: "Designing Copysmith's Brand Identity",
-    context: "Product Design + Software Intern",
-    description:
-      "I'm designing the brand identity and implementing a library of UI components in ReactJS.",
-    imgUrl: "/thumbnail-small-copysmith.png",
-  },
+  }
+//  {
+//    comingSoon: true,
+//    url: "copysmith",
+//    title: "Designing Copysmith's Brand Identity",
+//    context: "Product Design + Software Intern",
+//    description:
+//      "I'm designing the brand identity and implementing a library of UI components in ReactJS.",
+//    imgUrl: "/thumbnail-small-copysmith.png",
+//  }
 ];
 
 export const igenSummary = {
