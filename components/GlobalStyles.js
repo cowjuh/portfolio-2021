@@ -50,11 +50,11 @@ const GlobalStyles = () => {
 
         a {
           text-decoration: none;
-          color: black;
-          font-weight: 600;
+          color: inherit;
         }
 
         a:hover {
+          font-weight: 600;
           color: #3f51b5;
         }
 
