@@ -29,14 +29,10 @@ const HeaderTitle = styled.h1`
 `;
 
 const Span = styled.span`
-  cursor: pointer;
-  transition: all 250ms;
-  :hover {
-    color: #e91e63;
-    background-color: #fde8ef;
-    padding: 0 10px;
-    border-radius: 5px;
-  }
+	color: #e91e63;
+	background-color: #fde8ef;
+	padding: 0 10px;
+	border-radius: 5px;
 `;
 
 const Hero = () => {
@@ -44,9 +40,7 @@ const Hero = () => {
     <HeroContainer>
       <HeaderContainer>
         <HeaderTitle>
-          Hi 👩🏻‍💻‍ I’m Jenny, a <Span>designer</Span>, <Span>developer</Span>, and Integrated
-          Engineering student at UBC. I’ve designed fintech products at <Span>FISPAN</Span> and am
-          helping build <Span>Copysmith's</Span> AI Copywriter.
+          Hi 👩🏻‍💻‍ I’m Jenny, a designer, developer currently at <Span>Amazon</Span> as a Front-End Engineer intern. I study Integrated Engineering at <Span>UBC</Span> and was previously at Copysmith and FISPAN.
         </HeaderTitle>
         <PrimaryButton href='/about'>More about me</PrimaryButton>
       </HeaderContainer>
