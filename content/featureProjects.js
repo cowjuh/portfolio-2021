@@ -6,7 +6,7 @@ export const featuredProjects = [
     context: "Front-End Engineering Intern",
     description:
       "I'm designing the brand identity and implementing a library of UI components in ReactJS.",
-    imgUrl: "/thumbnail-aws.png",
+    imgUrl: "/thumbnail-small-aws.png",
   },
   {
     url: "notule",
