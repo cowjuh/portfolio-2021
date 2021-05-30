@@ -17,8 +17,6 @@ const FeaturedImage = styled.img`
   height: auto;
   border-radius: 2px;
   transition: all 250ms;
-  filter: ${(props) =>
-    props.disabled ? "grayscale(100%) brightness(105%)" : "none"};
   :hover {
     transform: scale(1.03);
   }
