@@ -48,7 +48,7 @@ const Hero = () => {
 			</NotificationBanner>
 			<HeaderContainer>
 				<HeaderTitle>
-					Hi 👩🏻‍💻‍ I’m Jenny, a designer, developer currently at <Span>Amazon</Span> as a Front-End Engineer intern. I study Integrated Engineering at <Span>UBC</Span> and was previously at Copysmith and FISPAN.
+					Hi 👩🏻‍💻‍ I’m Jenny! Currently at <Span>Amazon Web Services</Span> as a Front-End Engineer intern. I study Integrated Engineering at <Span>UBC</Span> but am also a product designer and artist.
         </HeaderTitle>
 				<PrimaryButton href='/about'>More about me</PrimaryButton>
 			</HeaderContainer>
