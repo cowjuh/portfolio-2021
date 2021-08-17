@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import ClickableIcon from "./atoms/ClickableIcon";
+import Dropdown from "./atoms/Dropdown";
 config.autoAddCss = false;
 
 const NavOuter = styled.div`
@@ -41,6 +39,8 @@ const NavInner = styled.div`
 const NavSection = styled.div`
   display: flex;
   align-items: center;
+  gap: 20px;
+  height: 100%;
 `;
 
 const NavLink = styled.a`
@@ -50,21 +50,40 @@ const NavLink = styled.a`
   text-decoration: none;
   margin: 0;
   transition: all 250ms;
-  margin-left: ${(props) => (props.margin ? "20px" : "0px")};
   :hover {
     color: #3f51b5;
-    transform: scale(1.05);
   }
 `;
+
+const NavItem = styled.div`
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const resumeLinks = [
+  { title: "Design Resume", url: "https://drive.google.com/file/d/1ZZd3H84nBZbRShXFg46T50prV9QfLWjt/view?usp=sharing" },
+  {
+    title: "Software Resume",
+    url: "https://drive.google.com/file/d/18RfFx4ZKB_JdzK0hfEYi3OrMwTJn3NFt/view?usp=sharing",
+  },
+];
 
 const Navbar = () => {
   const [width, setWidth] = useState();
   const [sidebar, setSidebar] = useState(false);
+  const [resumeDropdownIsOpen, setResumeDropdownIsOpen] = useState(false);
   const breakpoint = 768;
   useEffect(() => {
     setWidth(window.innerWidth);
     window.addEventListener("resize", (e) => setWidth(e.target.innerWidth));
   }, []);
+
+  const toggleResumeDropdown = () => {
+    setResumeDropdownIsOpen(!resumeDropdownIsOpen);
+  };
 
   return (
     <>
@@ -75,12 +94,12 @@ const Navbar = () => {
           </NavSection>
           <NavSection id='right'>
             <NavLink href='/about'>About</NavLink>
-            <NavLink
-              margin
-              target='_blank'
-              href='https://drive.google.com/file/d/1ZZd3H84nBZbRShXFg46T50prV9QfLWjt/view?usp=sharing'>
-              Resume
-            </NavLink>
+            <NavItem onClick={toggleResumeDropdown} onMouseLeave={() => setResumeDropdownIsOpen(false)}>
+              <NavLink hasDropdown margin target='_blank'>
+                Resume
+              </NavLink>
+              {resumeDropdownIsOpen && <Dropdown items={resumeLinks} />}
+            </NavItem>
           </NavSection>
         </NavInner>
       </NavOuter>
