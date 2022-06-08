@@ -64,7 +64,10 @@ const NavItem = styled.div`
 `;
 
 const resumeLinks = [
-  { title: "Design Resume", url: "https://drive.google.com/file/d/1ZZd3H84nBZbRShXFg46T50prV9QfLWjt/view?usp=sharing" },
+  {
+    title: "Design Resume",
+    url: "https://drive.google.com/file/d/1ZZd3H84nBZbRShXFg46T50prV9QfLWjt/view?usp=sharing",
+  },
   {
     title: "Software Resume",
     url: "https://drive.google.com/file/d/18RfFx4ZKB_JdzK0hfEYi3OrMwTJn3NFt/view?usp=sharing",
@@ -89,14 +92,17 @@ const Navbar = () => {
     <>
       <NavOuter>
         <NavInner>
-          <NavSection id='left'>
-            <NavLink href='/'>👩🏻‍💻 Jenny Zhang</NavLink>
+          <NavSection id="left">
+            <NavLink href="/">👩🏻‍💻 jenny zhang</NavLink>
           </NavSection>
-          <NavSection id='right'>
-            <NavLink href='/about'>About</NavLink>
-            <NavItem onClick={toggleResumeDropdown} onMouseLeave={() => setResumeDropdownIsOpen(false)}>
-              <NavLink hasDropdown margin target='_blank'>
-                Resume
+          <NavSection id="right">
+            <NavLink href="/about">about</NavLink>
+            <NavItem
+              onClick={toggleResumeDropdown}
+              onMouseLeave={() => setResumeDropdownIsOpen(false)}
+            >
+              <NavLink hasDropdown margin target="_blank">
+                resume
               </NavLink>
               {resumeDropdownIsOpen && <Dropdown items={resumeLinks} />}
             </NavItem>
