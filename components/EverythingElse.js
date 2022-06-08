@@ -83,6 +83,16 @@ const EverythingElse = () => {
       <h2>What I've been up to.</h2>
       <Container>
         <Card
+          external
+          link="https://www.tiktok.com/@cowjuh"
+          displayText="🎵 I started a unique TikTok account"
+        />
+        <Card
+          external
+          link="https://github.com/cowjuh/tyle"
+          displayText="👩🏻‍💻 I designed and built an IoT web application"
+        />
+        <Card
           link="/case-study/notule"
           displayText={
             "🤓 I designed and built my first full stack web application."
@@ -92,7 +102,7 @@ const EverythingElse = () => {
         <Card
           link="/play/stratus"
           displayText={
-            "👩🏻‍💻 I built a VR art gallery for a photography publication."
+            "🦋 I built a VR art gallery for a photography publication."
           }
           hoverText="Read case study"
         />
@@ -124,11 +134,6 @@ const EverythingElse = () => {
           displayText={"✨ I made some motion graphics animations!"}
           hoverText="Read case study"
         />
-        {/* <Card
-          link="/play/logos"
-          displayText={"✏️ I designed a couple logos."}
-          hoverText="Read case study"
-        /> */}
       </Container>
     </MainContainer>
   );

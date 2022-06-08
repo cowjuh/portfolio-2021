@@ -41,7 +41,7 @@ const Span = styled.span`
 const Hero = () => {
   return (
     <HeroContainer>
-      <NotificationBanner>
+      {/* <NotificationBanner>
         <span>
           New! Let's find a time to chat on my{" "}
           <a
@@ -51,12 +51,12 @@ const Hero = () => {
             Calendly.
           </a>
         </span>
-      </NotificationBanner>
+      </NotificationBanner> */}
       <HeaderContainer>
         <HeaderTitle>
-          Hi 👩🏻‍💻‍ I’m Jenny! Previously at <Span>Amazon Web Services</Span> as a
-          Front-End Engineer intern. I study Integrated Engineering at{" "}
-          <Span>UBC</Span> but am also a product designer and artist.
+          Hi 👩🏻‍💻‍ I’m Jenny! Incoming Frontend SWE Intern at <Span>Lyft</Span>.
+          Previously at <Span>Amazon Web Services</Span>. Artist, product
+          designer, photographer.
         </HeaderTitle>
         <PrimaryButton href="/about">More about me</PrimaryButton>
       </HeaderContainer>

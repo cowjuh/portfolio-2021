@@ -54,8 +54,9 @@ const Badge = styled.div`
 const FeaturedProject = (props) => {
   const project = props.project;
   const link = project.comingSoon ? "" : `/case-study/${project.url}`;
+  const notClickable = project.notClickable;
   return (
-    <Container disabled={project.comingSoon}>
+    <Container disabled={project.comingSoon || notClickable}>
       <Link href={link}>
         <FeaturedImage disabled={project.comingSoon} src={project.imgUrl} />
       </Link>
@@ -63,7 +64,7 @@ const FeaturedProject = (props) => {
       <Link href={link}>
         <ProjectTitle>{project.title}</ProjectTitle>
       </Link>
-      {project.comingSoon && <Badge>Current Job</Badge>}
+      {project.comingSoon && <Badge>Incoming</Badge>}
     </Container>
   );
 };
