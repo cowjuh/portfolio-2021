@@ -7,6 +7,7 @@ import MainContainer from "../components/MainContainer";
 import GlobalStyles from "../components/GlobalStyles";
 import Contact from "../components/Contact";
 import styled from "styled-components";
+import Tag from "../components/atoms/Tag";
 
 const ImgFrame = styled.div`
   width: 150px;
@@ -32,6 +33,33 @@ const ContentSection = styled.div`
   flex-direction: column;
 `;
 
+const TagContainer = styled.div`
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+`;
+
+const tags = [
+  "thrifting",
+  "maintaining french fluency",
+  "WebAssembly",
+  "staying fit",
+  "red hair... tempted",
+  "refactor portfolio to TS 🥲",
+  "saying the word slay",
+  "a side career in social media",
+  "finding time to MAKE ART",
+  "nyc tattoo artists",
+  "travelling",
+  "coding up and launching an app",
+  "pink cocktails 🍹",
+  "avoiding talking about tech",
+  "help friends find soulmates",
+  "velocity edits of friends",
+  "genmaicha drink recipe??",
+];
+
 const Notule = () => {
   return (
     <BodyContainer>
@@ -41,6 +69,7 @@ const Notule = () => {
           <ImgFrame>
             <ProfileImg width="300px" src="/me2022.jpg" />
           </ImgFrame>
+          <br />
           <h3>Artist, developer, lazy portfolio updater</h3>
           <p>
             <br />
@@ -66,6 +95,15 @@ const Notule = () => {
             summer for an internship with Lyft and if the person reading this
             wants to hang out, just say hi!
           </p>
+          <br />
+          <br />
+          <h3>On my mind...</h3>
+          <br />
+          <TagContainer>
+            {tags.map((tag) => {
+              return <Tag>{tag}</Tag>;
+            })}
+          </TagContainer>
         </ContentSection>
         <Contact />
       </MainContainer>
