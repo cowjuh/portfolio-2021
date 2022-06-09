@@ -1,17 +1,29 @@
+const HIGHLIGHT_COLOR = "#fde8ef";
+
 const GlobalStyles = () => {
   return (
     <div>
       <style jsx global>{`
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
+        ::-moz-selection {
+          background: ${HIGHLIGHT_COLOR};
+        }
+        ::-webkit-selection {
+          background: ${HIGHLIGHT_COLOR};
+        }
+        ::selection {
+          background: ${HIGHLIGHT_COLOR};
+        }
+
         html,
         body {
           padding: 0;
           margin: 0;
           color: #333;
-          font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI,
-            Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-            Helvetica Neue, sans-serif;
+          font-family: Phi, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+            sans-serif;
         }
 
         main {
