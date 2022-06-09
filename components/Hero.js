@@ -10,6 +10,9 @@ const HeroContainer = styled.div`
   justify-content: center;
   margin: 80px 0;
   max-height: 60vh;
+  @media (max-width: 1000px) {
+    max-height: 70vh;
+  }
 `;
 
 const HeaderContainer = styled.div`
