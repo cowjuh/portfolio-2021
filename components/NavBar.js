@@ -93,16 +93,16 @@ const Navbar = () => {
       <NavOuter>
         <NavInner>
           <NavSection id="left">
-            <NavLink href="/">👩🏻‍💻 jenny zhang</NavLink>
+            <NavLink href="/">JENNY ZHANG</NavLink>
           </NavSection>
           <NavSection id="right">
-            <NavLink href="/about">about</NavLink>
+            <NavLink href="/about">ABOUT</NavLink>
             <NavItem
               onClick={toggleResumeDropdown}
               onMouseLeave={() => setResumeDropdownIsOpen(false)}
             >
               <NavLink hasDropdown margin target="_blank">
-                resume
+                RESUME
               </NavLink>
               {resumeDropdownIsOpen && <Dropdown items={resumeLinks} />}
             </NavItem>

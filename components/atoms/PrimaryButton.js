@@ -33,7 +33,7 @@ const ButtonContainer = styled.a`
 `;
 
 const ButtonText = styled.p`
-  margin: 5px 0px;
+  margin: 3px 0px;
   font-weight: 500;
   font-size: 16px;
 `;

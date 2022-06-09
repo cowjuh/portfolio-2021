@@ -22,7 +22,7 @@ const FeaturedImage = styled.img`
   }
 `;
 
-const Subtitle = styled.p`
+export const Subtitle = styled.p`
   margin: 0;
   font-size: 0.9rem;
   text-transform: uppercase;
