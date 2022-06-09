@@ -31,6 +31,7 @@ const ContentSection = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-weight: normal;
 `;
 
 const TagContainer = styled.div`
@@ -70,7 +71,7 @@ const Notule = () => {
             <ProfileImg width="300px" src="/me2022.jpg" />
           </ImgFrame>
           <br />
-          <h3>Artist, developer, lazy portfolio updater</h3>
+          <h1>ARTIST — DEV — LAZY PORTFOLIO UPDATER</h1>
           <p>
             <br />
             The general gist? I'd say I'm a naturally creative person who picked
@@ -108,13 +109,6 @@ const Notule = () => {
         <Contact />
       </MainContainer>
       <GlobalStyles />
-      <style jsx>
-        {`
-          p {
-            font-weight: 500;
-          }
-        `}
-      </style>
     </BodyContainer>
   );
 };
