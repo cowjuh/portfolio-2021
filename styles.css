@@ -1,3 +1,26 @@
+@font-face {
+    font-family: Phi Regular;
+    src: url(public/fonts/phi-regular.woff2);
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: Phi Bold;
+    src: url(public/fonts/phi-bold.woff2);
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: Phi Italic;
+    src: url(public/fonts/phi-italic.woff2);
+  }
+
+  @font-face {
+    font-family: Phi Bold Italic;
+    src: url(public/fonts/phi-bolditalic.woff2);
+  }
+
 .body{
+    font-family: 'Phi';
     margin: 0;
 }
