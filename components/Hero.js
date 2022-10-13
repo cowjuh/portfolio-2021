@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import PrimaryButton from "./atoms/PrimaryButton";
 import FloatingArrow from "./atoms/FloatingArrow";
+import NotificationBanner from "./atoms/NotificationBanner";
 
 const HeroContainer = styled.div`
   width: 100%;
@@ -49,17 +49,11 @@ const HeaderBlock = styled.div`
 const Hero = () => {
   return (
     <HeroContainer>
-      {/* <NotificationBanner>
+      <NotificationBanner>
         <span>
-          New! Let's find a time to chat on my{" "}
-          <a
-            style={{ textDecoration: "underline" }}
-            href="https://calendly.com/cowjuh/30min"
-          >
-            Calendly.
-          </a>
+          Open to New Grad opportunities! Reach out to jenzhang530@gmail.com
         </span>
-      </NotificationBanner> */}
+      </NotificationBanner>
       <HeaderContainer>
         <HeaderBlock>
           <span>ALWAYS</span>
