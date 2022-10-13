@@ -1,4 +1,4 @@
-# How I sort of held 3 roles at AWS as a Front End Engineer Intern
+# The 4 Hats I Wore at my AWS Engineering Internship
 
 I interned with AWS last summer as a Front End Engineer intern. 
 
