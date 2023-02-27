@@ -46,34 +46,18 @@ const HeaderBlock = styled.div`
   }
 `;
 
+const HeaderTitle = styled.h1`
+  font-size: 32px;
+`;
+
 const Hero = () => {
   return (
     <HeroContainer>
-      <NotificationBanner>
-        <span>
-          Open to New Grad opportunities! Reach out to jenzhang530@gmail.com
-        </span>
-      </NotificationBanner>
       <HeaderContainer>
-        <HeaderBlock>
-          <span>ALWAYS</span>
-          <h2>Artist and creative developer</h2>
-        </HeaderBlock>
-        <HeaderBlock>
-          <span>INCOMING</span>
-          {/* <img width={50} src="/lyft_icon.png" /> */}
-
-          <h2>
-            <Span>Lyft</Span> Frontend SWE Intern
-          </h2>
-        </HeaderBlock>
-        <HeaderBlock>
-          <span>PREVIOUSLY</span>
-          {/* <img width={50} src="/aws_icon.png" /> */}
-          <h2>
-            <Span>AWS</Span> Frontend SDE Intern
-          </h2>
-        </HeaderBlock>
+        <HeaderTitle>
+          Hi 👩🏻‍💻‍ I’m Jenny! Previously at <Span>Lyft</Span> and <Span>AWS</Span> for Front-End Engineer internships. I
+          studied Integrated Engineering at <Span>UBC</Span> but am also a product designer and artist.
+        </HeaderTitle>
       </HeaderContainer>
       <p style={{ fontWeight: "600" }}>MY WORK</p>
       <FloatingArrow />

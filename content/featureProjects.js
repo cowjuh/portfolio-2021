@@ -1,28 +1,30 @@
 export const featuredProjects = [
   {
-    notClickable: true,
-    comingSoon: true,
     url: "lyft",
-    title: "Lyft 2022 Summer Internship",
-    context: "Front-End Software Engineering Intern",
+    title: "Lyft Fall 2022 Internship",
+    context: "Front-End Software Engineer Intern",
     description: "Incoming Summer 2022 Lyftern",
     imgUrl: "/thumbnail-small-lyft.png",
   },
   {
-    notClickable: true,
-    url: "amazon",
-    title: "Summer 2021 Amazon AWS Internship",
-    context: "Front-End Engineering Intern",
-    description:
-      "I'm designing the brand identity and implementing a library of UI components in ReactJS.",
+    url: "aws",
+    title: "AWS Summer 2021 Internship",
+    context: "Front-End Engineer Intern",
+    description: "I'm designing the brand identity and implementing a library of UI components in ReactJS.",
     imgUrl: "/thumbnail-small-aws.png",
+  },
+  {
+    url: "copysmith",
+    title: "Copysmith Winter 2021 Internship",
+    context: "Front-End Engineer Intern",
+    description: "I'm designing the brand identity and implementing a library of UI components in ReactJS.",
+    imgUrl: "/thumbnail-small-copysmith.png",
   },
   {
     url: "notule",
     title: "Notule - Your stream of consciousness",
     context: "Product Designer + Full Stack Developer",
-    description:
-      "Your stream of consciousness. A full stack (MongoDB, Express, NodeJS, ReactJS) progressive web app.",
+    description: "Your stream of consciousness. A full stack (MongoDB, Express, NodeJS, ReactJS) progressive web app.",
     imgUrl: "/thumbnail-small-notule.png",
   },
   {
@@ -69,8 +71,7 @@ export const featuredProjects = [
 ];
 
 export const igenSummary = {
-  imgUrl:
-    "https://cms-assets.tutsplus.com/uploads/users/158/posts/34500/final_image/FitnessApp0.jpg",
+  imgUrl: "https://cms-assets.tutsplus.com/uploads/users/158/posts/34500/final_image/FitnessApp0.jpg",
   problemTitle: ["Walking a straight line without vision is challenging."],
   problemParagraph: [
     "People with visual impairments are faced with potentially catastrophic situations when walking near open roads, quiet electric cars, or unusual obstacles, where the slightest deviation in their angle can have huge effects.",

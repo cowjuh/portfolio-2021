@@ -28,9 +28,13 @@ const CaseStudy = (props) => {
   return (
     <MainContainer>
       <GlobalStyles />
-      <CaseSummary content={props.summary} />
-      <Divider text={props.dividerText} />
-      {props.children}
+      <CaseSummary content={props.summary} summaryOnly={props.summaryOnly} />
+      {props.summaryOnly !== true && (
+        <>
+          <Divider text={props.dividerText} />
+          {props.children}
+        </>
+      )}
       <Contact />
     </MainContainer>
   );

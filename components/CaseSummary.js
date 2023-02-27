@@ -78,11 +78,15 @@ const CaseSummary = (props) => {
           content.problemParagraph.map((element) => {
             return <p>{element}</p>;
           })}
-        <h4 className="section-title">SOLUTION</h4>
-        {content &&
-          content.solution.map((element) => {
-            return <p>{element}</p>;
-          })}
+        {content?.solution && (
+          <>
+            <h4 className="section-title">SOLUTION</h4>
+            {content.solution.map((element) => {
+              return <p>{element}</p>;
+            })}
+          </>
+        )}
+
         <h4 className="section-title">OUTCOME</h4>
         {content &&
           content.outcome.map((element) => {

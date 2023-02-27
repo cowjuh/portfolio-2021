@@ -30,7 +30,7 @@ const Contact = () => {
         <a href="https://github.com/cowjuh/">Github</a>
         <a href="https://calendly.com/cowjuh/30min">Calendly</a>
       </LinksContainer>
-      <p style={{ color: "gray" }}>2022 • Built by Jenny Zhang using NextJS</p>
+      <p style={{ color: "gray" }}>2023 • Built by Jenny Zhang using NextJS</p>
 
       <style jsx>
         {`
