@@ -55,8 +55,9 @@ const Hero = () => {
     <HeroContainer>
       <HeaderContainer>
         <HeaderTitle>
-          Hi 👩🏻‍💻‍ I’m Jenny! Previously at <Span>Lyft</Span> and <Span>AWS</Span> for Front-End Engineer internships. I
-          studied Integrated Engineering at <Span>UBC</Span> but am also a product designer and artist.
+          Hi 👩🏻‍💻‍ I’m Jenny! Founding Design & Engineer @ <Span>Kino AI</Span>. Previously at <Span>Lyft</Span> and{" "}
+          <Span>AWS</Span> for Front-End Engineer internships. I studied engineering at <Span>UBC</Span> but am also a
+          product designer and artist.
         </HeaderTitle>
       </HeaderContainer>
       <p style={{ fontWeight: "600" }}>MY WORK</p>
